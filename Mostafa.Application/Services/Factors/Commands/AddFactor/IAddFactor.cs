@@ -1,4 +1,5 @@
 ﻿using Mostafa.Application.Interfaces.Contexts;
+using Mostafa.Domain.Entities.Factors;
 
 namespace Mostafa.Application.Services.Factors.Commands.AddFactor;
 public interface IAddFactorService
@@ -14,6 +15,7 @@ public class AddFactorService : IAddFactorService
 
     public void Add(string description)
     {
-        
+        Factor factor = new(description);
+        _context.Factors.Add(factor);
     }
 }

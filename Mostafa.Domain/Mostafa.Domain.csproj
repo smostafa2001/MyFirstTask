@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Mostafa.Application.Contracts\Mostafa.Application.Contracts.csproj" />
-  </ItemGroup>
-
 </Project>
