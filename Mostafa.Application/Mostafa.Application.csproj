@@ -11,15 +11,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Mostafa.Common\Mostafa.Common.csproj" />
     <ProjectReference Include="..\Mostafa.Domain\Mostafa.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\Factors\Commands\EditFactor\" />
-    <Folder Include="Services\Factors\Commands\AddItem\" />
-    <Folder Include="Services\Factors\Commands\EditItem\" />
-    <Folder Include="Services\Factors\Commands\RemoveItem\" />
-    <Folder Include="Services\Factors\Commands\RemoveFactor\" />
+    <Folder Include="Services\FactorItems\Commands\EditFactorItem\" />
+    <Folder Include="Services\FactorItems\Commands\GetFactorItem\" />
+    <Folder Include="Services\FactorItems\Commands\RemoveFactorItem\" />
   </ItemGroup>
 
 </Project>

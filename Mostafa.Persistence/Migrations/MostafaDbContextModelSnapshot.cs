@@ -45,6 +45,46 @@ namespace Mostafa.Persistence.Migrations
                     b.ToTable("Factors");
                 });
 
+            modelBuilder.Entity("Mostafa.Domain.Entities.Factors.FactorItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Discount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("FactorId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Tax")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UnitId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UnitPrice")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FactorId");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("UnitId");
+
+                    b.ToTable("Items");
+                });
+
             modelBuilder.Entity("Mostafa.Domain.Entities.Products.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -79,69 +119,35 @@ namespace Mostafa.Persistence.Migrations
                     b.ToTable("Units");
                 });
 
+            modelBuilder.Entity("Mostafa.Domain.Entities.Factors.FactorItem", b =>
+                {
+                    b.HasOne("Mostafa.Domain.Entities.Factors.Factor", "Factor")
+                        .WithMany("FactorItems")
+                        .HasForeignKey("FactorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Mostafa.Domain.Entities.Products.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Mostafa.Domain.Entities.Units.Unit", "Unit")
+                        .WithMany()
+                        .HasForeignKey("UnitId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Factor");
+
+                    b.Navigation("Product");
+
+                    b.Navigation("Unit");
+                });
+
             modelBuilder.Entity("Mostafa.Domain.Entities.Factors.Factor", b =>
                 {
-                    b.OwnsMany("Mostafa.Domain.Entities.Factors.FactorItem", "FactorItems", b1 =>
-                        {
-                            b1.Property<int>("Id")
-                                .ValueGeneratedOnAdd()
-                                .HasColumnType("int");
-
-                            SqlServerPropertyBuilderExtensions.UseIdentityColumn(b1.Property<int>("Id"));
-
-                            b1.Property<int>("Discount")
-                                .HasColumnType("int");
-
-                            b1.Property<int>("FactorId")
-                                .HasColumnType("int");
-
-                            b1.Property<int>("ProductId")
-                                .HasColumnType("int");
-
-                            b1.Property<int>("Quantity")
-                                .HasColumnType("int");
-
-                            b1.Property<int>("Tax")
-                                .HasColumnType("int");
-
-                            b1.Property<int>("UnitId")
-                                .HasColumnType("int");
-
-                            b1.Property<int>("UnitPrice")
-                                .HasColumnType("int");
-
-                            b1.HasKey("Id");
-
-                            b1.HasIndex("FactorId");
-
-                            b1.HasIndex("ProductId");
-
-                            b1.HasIndex("UnitId");
-
-                            b1.ToTable("FactorItems", (string)null);
-
-                            b1.WithOwner("Factor")
-                                .HasForeignKey("FactorId");
-
-                            b1.HasOne("Mostafa.Domain.Entities.Products.Product", "Product")
-                                .WithMany()
-                                .HasForeignKey("ProductId")
-                                .OnDelete(DeleteBehavior.Cascade)
-                                .IsRequired();
-
-                            b1.HasOne("Mostafa.Domain.Entities.Units.Unit", "Unit")
-                                .WithMany()
-                                .HasForeignKey("UnitId")
-                                .OnDelete(DeleteBehavior.Cascade)
-                                .IsRequired();
-
-                            b1.Navigation("Factor");
-
-                            b1.Navigation("Product");
-
-                            b1.Navigation("Unit");
-                        });
-
                     b.Navigation("FactorItems");
                 });
 #pragma warning restore 612, 618

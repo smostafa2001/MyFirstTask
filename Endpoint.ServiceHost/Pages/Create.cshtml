@@ -1,0 +1,66 @@
+﻿@page
+@model CreateModel
+<form method="post">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group">
+				<label asp-for="AddFactorCommand.Description" class="control-label">توضیحات</label>
+				<input class="form-control" asp-for="AddFactorCommand.Description" />
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="form-group">
+				<label asp-for="AddFactorCommand.CreationDate" class="control-label">تاریخ</label>
+				<input class="form-control" asp-for="AddFactorCommand.CreationDate" />
+			</div>
+		</div>
+	</div>
+</form>
+<form method="post" asp-page-handler="AddItem">
+	<hr />
+	<label>آیتم ها</label>
+	<table class="table table-striped table-bordered">
+		<thead>
+			<tr>
+				<th>محصول</th>
+				<th>واحد</th>
+				<th>تعداد</th>
+				<th>قیمت واحد</th>
+				<th>مالیات</th>
+				<th>تخفیف</th>
+				<th>عملیات</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<select class="form-control" asp-for="AddItemCommand.ProductId" asp-items="@Model.Products">
+						<option value="0">محصول...</option>
+					</select>
+				</td>
+				<td>
+					<select class="form-control" asp-for="AddItemCommand.UnitId" asp-items="@Model.Units">
+						<option value="0">واحد...</option>
+					</select>
+				</td>
+				<td>
+					<input class="form-control" asp-for="AddItemCommand.Quantity">
+				</td>
+				<td>
+					<input class="form-control persianDateInput" asp-for="AddItemCommand.UnitPrice">
+				</td>
+				<td>
+					<input class="form-control" asp-for="AddItemCommand.Tax">
+				</td>
+				<td>
+					<input class="form-control" asp-for="AddItemCommand.Discount">
+				</td>
+				<td>
+					<button type="submit" class="btn btn-success waves-effect waves-light m-b-5">افزودن</button>
+					<input type="hidden" asp-for="AddItemCommand.FactorId" value="@Model.FactorId" />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<button type="submit" class="btn btn-info waves-effect waves-light m-rl-5">ثبت</button>
+</form>

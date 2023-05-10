@@ -953,6 +953,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Mostafa.Common": "1.0.0",
           "Mostafa.Domain": "1.0.0"
         },
         "compile": {
@@ -960,6 +961,16 @@
         },
         "runtime": {
           "bin/placeholder/Mostafa.Application.dll": {}
+        }
+      },
+      "Mostafa.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Mostafa.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mostafa.Common.dll": {}
         }
       },
       "Mostafa.Domain/1.0.0": {
@@ -3338,6 +3349,11 @@
       "path": "../Mostafa.Application/Mostafa.Application.csproj",
       "msbuildProject": "../Mostafa.Application/Mostafa.Application.csproj"
     },
+    "Mostafa.Common/1.0.0": {
+      "type": "project",
+      "path": "../Mostafa.Common/Mostafa.Common.csproj",
+      "msbuildProject": "../Mostafa.Common/Mostafa.Common.csproj"
+    },
     "Mostafa.Domain/1.0.0": {
       "type": "project",
       "path": "../Mostafa.Domain/Mostafa.Domain.csproj",
@@ -3355,6 +3371,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.5",
       "Mostafa.Application >= 1.0.0",
+      "Mostafa.Common >= 1.0.0",
       "Mostafa.Persistence >= 1.0.0"
     ]
   },
@@ -3387,6 +3404,9 @@
           "projectReferences": {
             "C:\\Users\\tb\\Source\\Repos\\Mostafa\\Mostafa.Application\\Mostafa.Application.csproj": {
               "projectPath": "C:\\Users\\tb\\Source\\Repos\\Mostafa\\Mostafa.Application\\Mostafa.Application.csproj"
+            },
+            "C:\\Users\\tb\\Source\\Repos\\Mostafa\\Mostafa.Common\\Mostafa.Common.csproj": {
+              "projectPath": "C:\\Users\\tb\\Source\\Repos\\Mostafa\\Mostafa.Common\\Mostafa.Common.csproj"
             },
             "C:\\Users\\tb\\Source\\Repos\\Mostafa\\Mostafa.Persistence\\Mostafa.Persistence.csproj": {
               "projectPath": "C:\\Users\\tb\\Source\\Repos\\Mostafa\\Mostafa.Persistence\\Mostafa.Persistence.csproj"

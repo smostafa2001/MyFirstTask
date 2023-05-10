@@ -7,6 +7,7 @@ namespace Mostafa.Application.Interfaces.Contexts;
 public interface IDbContext
 {
     DbSet<Factor> Factors { get; set; }
+    DbSet<FactorItem> Items { get; set; }
     public DbSet<Product> Products { get; set; }
     public DbSet<Unit> Units { get; set; }
     int SaveChanges(bool acceptAllChangesOnSuccess);

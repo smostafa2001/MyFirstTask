@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Mostafa.Application\Mostafa.Application.csproj" />
+    <ProjectReference Include="..\Mostafa.Common\Mostafa.Common.csproj" />
     <ProjectReference Include="..\Mostafa.Persistence\Mostafa.Persistence.csproj" />
   </ItemGroup>
 

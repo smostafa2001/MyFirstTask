@@ -1,0 +1,14 @@
+﻿@page "{id}"
+@model EditModel
+<form method="post">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="form-group">
+				<label for="Description" class="control-label">توضیحات</label>
+				<input type="text" class="form-control" asp-for="Description" value="@Model.Description"/>
+				<input type="hidden" value="@Model." />
+			</div>
+			<button type="submit" class="btn btn-info waves-effect waves-light">ثبت</button>
+		</div>
+	</div>
+</form>

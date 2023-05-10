@@ -11,6 +11,8 @@
           "Microsoft.EntityFrameworkCore.Design": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.5",
+          "Mostafa.Application": "1.0.0",
+          "Mostafa.Common": "1.0.0",
           "Mostafa.Persistence": "1.0.0"
         },
         "runtime": {
@@ -700,15 +702,22 @@
           }
         }
       },
-      "Mostafa.Application.Contracts/1.0.0": {
+      "Mostafa.Application/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Mostafa.Common": "1.0.0",
+          "Mostafa.Domain": "1.0.0"
+        },
         "runtime": {
-          "Mostafa.Application.Contracts.dll": {}
+          "Mostafa.Application.dll": {}
+        }
+      },
+      "Mostafa.Common/1.0.0": {
+        "runtime": {
+          "Mostafa.Common.dll": {}
         }
       },
       "Mostafa.Domain/1.0.0": {
-        "dependencies": {
-          "Mostafa.Application.Contracts": "1.0.0"
-        },
         "runtime": {
           "Mostafa.Domain.dll": {}
         }
@@ -717,6 +726,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
+          "Mostafa.Application": "1.0.0",
           "Mostafa.Domain": "1.0.0"
         },
         "runtime": {
@@ -1207,7 +1217,12 @@
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
-    "Mostafa.Application.Contracts/1.0.0": {
+    "Mostafa.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mostafa.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

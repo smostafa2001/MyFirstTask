@@ -15,7 +15,6 @@ public class FactorItem
     public int Discount { get; private set; }
     public int TotalPrice { get => UnitPrice * Quantity + Tax - Discount; }
     public int FactorId { get; private set; }
-    public Factor Factor { get; private set; }
 
     public FactorItem(int productId, int unitId, int quantity, int tax, int unitPrice, int discount, int factorId)
     {

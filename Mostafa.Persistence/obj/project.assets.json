@@ -858,6 +858,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Mostafa.Common": "1.0.0",
           "Mostafa.Domain": "1.0.0"
         },
         "compile": {
@@ -865,6 +866,16 @@
         },
         "runtime": {
           "bin/placeholder/Mostafa.Application.dll": {}
+        }
+      },
+      "Mostafa.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Mostafa.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mostafa.Common.dll": {}
         }
       },
       "Mostafa.Domain/1.0.0": {
@@ -3050,6 +3061,11 @@
       "type": "project",
       "path": "../Mostafa.Application/Mostafa.Application.csproj",
       "msbuildProject": "../Mostafa.Application/Mostafa.Application.csproj"
+    },
+    "Mostafa.Common/1.0.0": {
+      "type": "project",
+      "path": "../Mostafa.Common/Mostafa.Common.csproj",
+      "msbuildProject": "../Mostafa.Common/Mostafa.Common.csproj"
     },
     "Mostafa.Domain/1.0.0": {
       "type": "project",

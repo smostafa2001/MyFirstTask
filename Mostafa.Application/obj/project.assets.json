@@ -173,6 +173,16 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "Mostafa.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Mostafa.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mostafa.Common.dll": {}
+        }
+      },
       "Mostafa.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -521,6 +531,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Mostafa.Common/1.0.0": {
+      "type": "project",
+      "path": "../Mostafa.Common/Mostafa.Common.csproj",
+      "msbuildProject": "../Mostafa.Common/Mostafa.Common.csproj"
+    },
     "Mostafa.Domain/1.0.0": {
       "type": "project",
       "path": "../Mostafa.Domain/Mostafa.Domain.csproj",
@@ -530,6 +545,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.EntityFrameworkCore >= 7.0.5",
+      "Mostafa.Common >= 1.0.0",
       "Mostafa.Domain >= 1.0.0"
     ]
   },
@@ -560,6 +576,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\tb\\Source\\Repos\\Mostafa\\Mostafa.Common\\Mostafa.Common.csproj": {
+              "projectPath": "C:\\Users\\tb\\Source\\Repos\\Mostafa\\Mostafa.Common\\Mostafa.Common.csproj"
+            },
             "C:\\Users\\tb\\Source\\Repos\\Mostafa\\Mostafa.Domain\\Mostafa.Domain.csproj": {
               "projectPath": "C:\\Users\\tb\\Source\\Repos\\Mostafa\\Mostafa.Domain\\Mostafa.Domain.csproj"
             }

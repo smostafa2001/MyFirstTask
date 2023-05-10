@@ -1,10 +1,10 @@
 C:\Users\tb\Source\Repos\Mostafa\Mostafa.Application\bin\Debug\net6.0\Mostafa.Application.deps.json
 C:\Users\tb\Source\Repos\Mostafa\Mostafa.Application\bin\Debug\net6.0\Mostafa.Application.dll
 C:\Users\tb\Source\Repos\Mostafa\Mostafa.Application\bin\Debug\net6.0\Mostafa.Application.pdb
-C:\Users\tb\Source\Repos\Mostafa\Mostafa.Application\bin\Debug\net6.0\Mostafa.Application.Contracts.dll
+C:\Users\tb\Source\Repos\Mostafa\Mostafa.Application\bin\Debug\net6.0\Mostafa.Common.dll
 C:\Users\tb\Source\Repos\Mostafa\Mostafa.Application\bin\Debug\net6.0\Mostafa.Domain.dll
+C:\Users\tb\Source\Repos\Mostafa\Mostafa.Application\bin\Debug\net6.0\Mostafa.Common.pdb
 C:\Users\tb\Source\Repos\Mostafa\Mostafa.Application\bin\Debug\net6.0\Mostafa.Domain.pdb
-C:\Users\tb\Source\Repos\Mostafa\Mostafa.Application\bin\Debug\net6.0\Mostafa.Application.Contracts.pdb
 C:\Users\tb\Source\Repos\Mostafa\Mostafa.Application\obj\Debug\net6.0\Mostafa.Application.csproj.AssemblyReference.cache
 C:\Users\tb\Source\Repos\Mostafa\Mostafa.Application\obj\Debug\net6.0\Mostafa.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\tb\Source\Repos\Mostafa\Mostafa.Application\obj\Debug\net6.0\Mostafa.Application.AssemblyInfoInputs.cache

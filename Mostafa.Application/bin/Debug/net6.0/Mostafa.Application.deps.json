@@ -9,6 +9,7 @@
       "Mostafa.Application/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Mostafa.Common": "1.0.0",
           "Mostafa.Domain": "1.0.0"
         },
         "runtime": {
@@ -130,15 +131,12 @@
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
-      "Mostafa.Application.Contracts/1.0.0": {
+      "Mostafa.Common/1.0.0": {
         "runtime": {
-          "Mostafa.Application.Contracts.dll": {}
+          "Mostafa.Common.dll": {}
         }
       },
       "Mostafa.Domain/1.0.0": {
-        "dependencies": {
-          "Mostafa.Application.Contracts": "1.0.0"
-        },
         "runtime": {
           "Mostafa.Domain.dll": {}
         }
@@ -235,7 +233,7 @@
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
     },
-    "Mostafa.Application.Contracts/1.0.0": {
+    "Mostafa.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

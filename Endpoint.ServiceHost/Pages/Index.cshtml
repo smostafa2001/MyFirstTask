@@ -1,10 +1,73 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+	ViewData["Title"] = "صفحه اصلی";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row">
+	<div class="col-sm-12">
+		<p class="pull-left">
+			<a class="btn btn-success btn-lg" asp-page="/Create">ایجاد فاکتور جدید</a>
+		</p>
+	</div>
 </div>
+
+<div class="row" id="ProductCategoriesDiv">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">لیست فاکتورها</h3>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<table class="table table-striped table-bordered">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>تاریخ ایجاد</th>
+									<th>توضیحات</th>
+									<th>عملیات</th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (var factor in Model.Factors)
+								{
+									<tr>
+										<td>@factor.Id</td>
+										<td>@factor.CreationDate</td>
+										<td>@factor.Description</td>
+										<td>
+											<a class="btn btn-warning pull-right m-rl-1" asp-page="/Edit" asp-route-id="@factor.Id">ویرایش</a>
+											@if (!factor.IsRemoved)
+											{
+												<a asp-page-handler="Remove" asp-route-id="@factor.Id" class="btn btn-danger pull-right m-rl-1">حذف</a>
+											}
+											<a class="btn btn-primary pull-right m-rl-1" asp-page="/Items" asp-route-id="@factor.Id">نمایش فاکتور</a>
+										</td>
+									</tr>
+								}
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+@section Scripts {
+	<script src="~/adminTheme/assets/datatables/jquery.dataTables.min.js"></script>
+	<script src="~/adminTheme/assets/datatables/dataTables.bootstrap.js"></script>
+	<script type="text/javascript">
+		setTimeout(function() {
+			var element = document.getElementById('message');
+			element.parentNode.removeChild(element);
+		}, 3000);
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#datatable').dataTable();
+		});
+	</script>
+}
