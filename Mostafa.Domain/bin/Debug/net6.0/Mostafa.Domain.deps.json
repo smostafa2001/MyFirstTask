@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Mostafa.Domain/1.0.0": {
+        "dependencies": {
+          "Mostafa.Application.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "Mostafa.Domain.dll": {}
+        }
+      },
+      "Mostafa.Application.Contracts/1.0.0": {
+        "runtime": {
+          "Mostafa.Application.Contracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Mostafa.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mostafa.Application.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

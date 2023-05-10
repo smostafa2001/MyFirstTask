@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mostafa.Domain\Mostafa.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\Factors\Commands\EditFactor\" />
+    <Folder Include="Services\Factors\Commands\AddItem\" />
+    <Folder Include="Services\Factors\Commands\EditItem\" />
+    <Folder Include="Services\Factors\Commands\RemoveItem\" />
+    <Folder Include="Services\Factors\Commands\RemoveFactor\" />
+  </ItemGroup>
+
+</Project>

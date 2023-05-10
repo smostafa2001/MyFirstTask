@@ -1,0 +1,15 @@
+C:\Users\tb\Source\Repos\Mostafa\Mostafa.Domain\bin\Debug\net6.0\Mostafa.Domain.deps.json
+C:\Users\tb\Source\Repos\Mostafa\Mostafa.Domain\bin\Debug\net6.0\Mostafa.Domain.dll
+C:\Users\tb\Source\Repos\Mostafa\Mostafa.Domain\bin\Debug\net6.0\Mostafa.Domain.pdb
+C:\Users\tb\Source\Repos\Mostafa\Mostafa.Domain\bin\Debug\net6.0\Mostafa.Application.Contracts.dll
+C:\Users\tb\Source\Repos\Mostafa\Mostafa.Domain\bin\Debug\net6.0\Mostafa.Application.Contracts.pdb
+C:\Users\tb\Source\Repos\Mostafa\Mostafa.Domain\obj\Debug\net6.0\Mostafa.Domain.csproj.AssemblyReference.cache
+C:\Users\tb\Source\Repos\Mostafa\Mostafa.Domain\obj\Debug\net6.0\Mostafa.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tb\Source\Repos\Mostafa\Mostafa.Domain\obj\Debug\net6.0\Mostafa.Domain.AssemblyInfoInputs.cache
+C:\Users\tb\Source\Repos\Mostafa\Mostafa.Domain\obj\Debug\net6.0\Mostafa.Domain.AssemblyInfo.cs
+C:\Users\tb\Source\Repos\Mostafa\Mostafa.Domain\obj\Debug\net6.0\Mostafa.Domain.csproj.CoreCompileInputs.cache
+C:\Users\tb\Source\Repos\Mostafa\Mostafa.Domain\obj\Debug\net6.0\Mostafa.Domain.csproj.CopyComplete
+C:\Users\tb\Source\Repos\Mostafa\Mostafa.Domain\obj\Debug\net6.0\Mostafa.Domain.dll
+C:\Users\tb\Source\Repos\Mostafa\Mostafa.Domain\obj\Debug\net6.0\refint\Mostafa.Domain.dll
+C:\Users\tb\Source\Repos\Mostafa\Mostafa.Domain\obj\Debug\net6.0\Mostafa.Domain.pdb
+C:\Users\tb\Source\Repos\Mostafa\Mostafa.Domain\obj\Debug\net6.0\ref\Mostafa.Domain.dll
