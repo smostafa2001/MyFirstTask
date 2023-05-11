@@ -1,0 +1,58 @@
+﻿@page "{id}"
+@model EditItemModel
+@{
+}
+
+<form method="post">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="Command.ProductId" class="control-label">محصول</label>
+                <select class="form-control" asp-for="Command.ProductId" asp-items="@Model.Products">
+                    <option value="@Model.Product.Id">@Model.Product.Name</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="Command.UnitId" class="control-label">واحد</label>
+                <select class="form-control" asp-for="Command.UnitId" asp-items="@Model.Units">
+                    <option value="0">واحد...</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="Command.Quantity" class="control-label">تعداد</label>
+                <input class="form-control" asp-for="Command.Quantity">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="Command.Tax" class="control-label">مالیات</label>
+                <input class="form-control" asp-for="Command.Tax">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="Command.UnitPrice" class="control-label">قیمت واحد</label>
+                <input class="form-control persianDateInput" asp-for="Command.UnitPrice">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="Command.Discount" class="control-label">تخفیف</label>
+                <input class="form-control" asp-for="Command.Discount">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button type="submit" class="btn btn-success waves-effect waves-light m-b-5">ایجاد</button>
+            <input type="hidden" asp-for="Command.FactorId" value="@Model.FactorId" />
+            <input type="hidden" asp-for="Command.Id" value="@Model.Command.Id" />
+        </div>
+    </div>
+</form>

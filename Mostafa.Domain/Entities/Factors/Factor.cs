@@ -17,7 +17,9 @@ public class Factor
     }
 
     public void Remove() => IsRemoved = true;
-    public void EditDescription(string newDescription) => Description = newDescription;
-    public void Add(FactorItem item) => FactorItems.Add(item);
-
+    public void Edit(string newDescription, DateTime newCreationDate)
+    {
+        Description = newDescription;
+        CreationDate = newCreationDate;
+    }
 }

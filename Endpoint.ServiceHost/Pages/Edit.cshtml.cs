@@ -1,39 +1,30 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Mostafa.Application.Services.Factors.Commands.EditFactor;
-using Mostafa.Application.Services.Factors.Commands.GetFactor;
+using Mostafa.Application.Services.Factors.Commands.EditFactors;
+using Mostafa.Application.Services.Factors.Commands.GetFactorDetails;
 
 namespace Endpoint.ServiceHost.Pages;
 
 public class EditModel : PageModel
 {
-	public int Id { get; private set; }
-	public string Description { get; private set; }
-	private readonly IGetFactorService _getFactorService;
-	private readonly IEditFactorService _editFactorService;
+    public EditFactor Command { get; set; }
 
-	public EditModel(IEditFactorService editFactorService, IGetFactorService getFactorService)
-	{
-		_editFactorService = editFactorService;
-		_getFactorService = getFactorService;
-	}
+    private readonly IEditFactorService _editFactorService;
+    private readonly IGetFactorDetailsService _getFactorDetailsService;
 
-	public void OnGet(int id)
-	{
-		Id = id;
-		Description = _getFactorService.Get(id).Description;
-	}
+    public EditModel(IEditFactorService editFactorService, IGetFactorDetailsService getFactorDetailsService)
+    {
+        _editFactorService = editFactorService;
+        _getFactorDetailsService = getFactorDetailsService;
+    }
 
-	public IActionResult OnPost(int id, string description)
-	{
-		Description = description;
-		Id = id;
-		if (string.IsNullOrWhiteSpace(Description))
-		{
-			Description = "ندارد";
-		}
+    public void OnGet(int id) => Command = _getFactorDetailsService.GetDetails(id);
 
-		_editFactorService.Edit(Id, Description);
-		return RedirectToPage("/Index");
-	}
+    public IActionResult OnPost(EditFactor command)
+    {
+        if (string.IsNullOrWhiteSpace(command.Description)) command.Description = "ندارد";
+        if (command.CreationDate == default) command.CreationDate = DateTime.Now;
+        _editFactorService.Edit(command);
+        return RedirectToPage("/Index");
+    }
 }

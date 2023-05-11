@@ -1,6 +1,6 @@
 ﻿using Mostafa.Application.Interfaces.Contexts;
 
-namespace Mostafa.Application.Services.Factors.Commands.EditFactor;
+namespace Mostafa.Application.Services.Factors.Commands.EditFactors;
 
 public class EditFactorService : IEditFactorService
 {
@@ -8,10 +8,10 @@ public class EditFactorService : IEditFactorService
 
     public EditFactorService(IDbContext context) => _context = context;
 
-    public void Edit(int id, string description)
+    public void Edit(EditFactor command)
     {
-        var factor = _context.Factors.FirstOrDefault(f => f.Id == id);
-        factor.EditDescription(description);
+        var factor = _context.Factors.FirstOrDefault(f => f.Id == command.Id);
+        factor.Edit(command.Description, command.CreationDate);
         _context.SaveChanges();
     }
 }

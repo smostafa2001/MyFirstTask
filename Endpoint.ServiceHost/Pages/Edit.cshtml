@@ -1,14 +1,21 @@
 ﻿@page "{id}"
 @model EditModel
+
 <form method="post">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="form-group">
-				<label for="Description" class="control-label">توضیحات</label>
-				<input type="text" class="form-control" asp-for="Description" value="@Model.Description"/>
-				<input type="hidden" value="@Model." />
-			</div>
-			<button type="submit" class="btn btn-info waves-effect waves-light">ثبت</button>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="Command.Description" class="control-label">توضیحات</label>
+                <input class="form-control" asp-for="Command.Description" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="Command.CreationDate" class="control-label">تاریخ</label>
+                <input class="form-control" asp-for="Command.CreationDate" />
+                <input type="hidden" asp-for="Command.Id" value="@Model.Command.Id" />
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-info waves-effect waves-light m-rl-5">ثبت</button>
 </form>

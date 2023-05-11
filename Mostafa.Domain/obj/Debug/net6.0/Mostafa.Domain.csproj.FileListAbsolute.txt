@@ -10,3 +10,15 @@ C:\Users\tb\Source\Repos\Mostafa\Mostafa.Domain\obj\Debug\net6.0\Mostafa.Domain.
 C:\Users\tb\Source\Repos\Mostafa\Mostafa.Domain\obj\Debug\net6.0\refint\Mostafa.Domain.dll
 C:\Users\tb\Source\Repos\Mostafa\Mostafa.Domain\obj\Debug\net6.0\Mostafa.Domain.pdb
 C:\Users\tb\Source\Repos\Mostafa\Mostafa.Domain\obj\Debug\net6.0\ref\Mostafa.Domain.dll
+D:\Mostafa\MyFirstTask\Mostafa.Domain\bin\Debug\net6.0\Mostafa.Domain.deps.json
+D:\Mostafa\MyFirstTask\Mostafa.Domain\bin\Debug\net6.0\Mostafa.Domain.dll
+D:\Mostafa\MyFirstTask\Mostafa.Domain\bin\Debug\net6.0\Mostafa.Domain.pdb
+D:\Mostafa\MyFirstTask\Mostafa.Domain\obj\Debug\net6.0\Mostafa.Domain.csproj.AssemblyReference.cache
+D:\Mostafa\MyFirstTask\Mostafa.Domain\obj\Debug\net6.0\Mostafa.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mostafa\MyFirstTask\Mostafa.Domain\obj\Debug\net6.0\Mostafa.Domain.AssemblyInfoInputs.cache
+D:\Mostafa\MyFirstTask\Mostafa.Domain\obj\Debug\net6.0\Mostafa.Domain.AssemblyInfo.cs
+D:\Mostafa\MyFirstTask\Mostafa.Domain\obj\Debug\net6.0\Mostafa.Domain.csproj.CoreCompileInputs.cache
+D:\Mostafa\MyFirstTask\Mostafa.Domain\obj\Debug\net6.0\Mostafa.Domain.dll
+D:\Mostafa\MyFirstTask\Mostafa.Domain\obj\Debug\net6.0\refint\Mostafa.Domain.dll
+D:\Mostafa\MyFirstTask\Mostafa.Domain\obj\Debug\net6.0\Mostafa.Domain.pdb
+D:\Mostafa\MyFirstTask\Mostafa.Domain\obj\Debug\net6.0\ref\Mostafa.Domain.dll

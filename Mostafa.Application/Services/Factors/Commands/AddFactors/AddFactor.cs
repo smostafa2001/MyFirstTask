@@ -1,6 +1,4 @@
-﻿using Mostafa.Domain.Entities.Factors;
-
-namespace Mostafa.Application.Services.Factors.Commands.AddFactor;
+﻿namespace Mostafa.Application.Services.Factors.Commands.AddFactors;
 
 public class AddFactor
 {

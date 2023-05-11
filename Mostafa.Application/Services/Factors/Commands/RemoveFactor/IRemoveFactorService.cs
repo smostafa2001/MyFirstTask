@@ -18,5 +18,4 @@ public class RemoveFactorService : IRemoveFactorService
         factor.Remove();
         _context.SaveChanges();
     }
-
 }

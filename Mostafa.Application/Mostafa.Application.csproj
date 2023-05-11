@@ -15,10 +15,4 @@
     <ProjectReference Include="..\Mostafa.Domain\Mostafa.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Services\FactorItems\Commands\EditFactorItem\" />
-    <Folder Include="Services\FactorItems\Commands\GetFactorItem\" />
-    <Folder Include="Services\FactorItems\Commands\RemoveFactorItem\" />
-  </ItemGroup>
-
 </Project>

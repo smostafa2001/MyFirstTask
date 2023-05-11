@@ -1,7 +1,7 @@
 ﻿using Mostafa.Application.Interfaces.Contexts;
 using Mostafa.Domain.Entities.Factors;
 
-namespace Mostafa.Application.Services.Factors.Commands.AddFactor;
+namespace Mostafa.Application.Services.Factors.Commands.AddFactors;
 
 public class AddFactorService : IAddFactorService
 {

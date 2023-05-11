@@ -4,92 +4,103 @@
 }
 
 <div class="row">
-	<div class="col-sm-12">
-		<p class="pull-left">
-			<table class="table table-striped table-bordered">
-				<thead>
-					<tr>
-						<th>#</th>
-						<th>توضیحات</th>
-						<th>تاریخ ایجاد</th>
-					</tr>
-				</thead>
-				<tbody>
-
-				</tbody>
-				<tr>
-					<td>@Model.Factor.Id</td>
-					<td>@Model.Factor.Description</td>
-					<td>@Model.Factor.CreationDate</td>
-				</tr>
-			</table>
-		</p>
-	</div>
+    <div class="col-sm-12">
+        <p class="pull-left">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>توضیحات</th>
+                        <th>تاریخ ایجاد</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tr>
+                    <td>@Model.Factor.Id</td>
+                    <td>@Model.Factor.Description</td>
+                    <td>@Model.Factor.CreationDate</td>
+                </tr>
+            </table>
+        </p>
+    </div>
 </div>
 
 @if (Model.Items.FirstOrDefault() is not null)
 {
-	<div class="row" id="ProductCategoriesDiv">
-		<div class="col-md-12">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">لیست آیتم ها</h3>
-				</div>
-				<div class="panel-body">
-					<div class="row">
-						<div class="col-md-12 col-sm-12 col-xs-12">
-							<table class="table table-striped table-bordered">
-								<thead>
-									<tr>
-										<th>#</th>
-										<th>محصول</th>
-										<th>تعداد</th>
-										<th>واحد</th>
-										<th>مالیات</th>
-										<th>تخفیف</th>
-										<th>قیمت کل</th>
-										<th>عملیات</th>
-									</tr>
-								</thead>
-								<tbody>
-									@foreach (var item in Model.Items)
-									{
-										<tr>
-											<td>@item.Id</td>
-											<td>@item.Product</td>
-											<td>@item.Quantity</td>
-											<td>@item.Unit</td>
-											<td>@item.Tax</td>
-											<td>@item.Discount</td>
-											<td>@item.TotalPrice</td>
-											<td>Operation</td>
-										</tr>
-									}
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row" id="ProductCategoriesDiv">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">لیست آیتم ها</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>محصول</th>
+                                        <th>تعداد</th>
+                                        <th>واحد</th>
+                                        <th>قیمت واحد</th>
+                                        <th>مالیات</th>
+                                        <th>تخفیف</th>
+                                        <th>قیمت کل</th>
+                                        <th>عملیات</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.Items)
+                                    {
+                                        <tr>
+                                            <td>@item.Id</td>
+                                            <td>@item.Product</td>
+                                            <td>@item.Quantity</td>
+                                            <td>@item.Unit</td>
+                                            <td>@item.UnitPrice</td>
+                                            <td>@item.Tax</td>
+                                            <td>@item.Discount</td>
+                                            <td>@item.TotalPrice</td>
+                                            <td>
+                                                <a class="btn btn-warning pull-right m-rl-1" asp-page="/EditItem" asp-route-id="@item.Id">ویرایش</a>
+                                                <form class="d-inline" method="post" asp-page-handler="Remove">
+                                                    <input type="hidden" name="id" value="@item.Id" />
+                                                    <input type="hidden" name="factorId" value="@item.FactorId" />
+                                                    <button type="submit" class="btn btn-danger pull-right m-rl-1">حذف</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 }
 else
 {
-	<div>ردیفی برای نمایشی وجود ندارد...</div>
+    <div>ردیفی برای نمایشی وجود ندارد...</div>
 }
+<div class="row">
+    <a class="btn btn-success" asp-page="/AddItem" asp-route-id="@Model.Factor.Id">افزودن آیتم جدید</a>
+</div>
 @section Scripts {
-	<script src="~/adminTheme/assets/datatables/jquery.dataTables.min.js"></script>
-	<script src="~/adminTheme/assets/datatables/dataTables.bootstrap.js"></script>
-	<script type="text/javascript">
-		setTimeout(function() {
-			var element = document.getElementById('message');
-			element.parentNode.removeChild(element);
-		}, 3000);
-	</script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#datatable').dataTable();
-		});
-	</script>
+    <script src="~/adminTheme/assets/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/adminTheme/assets/datatables/dataTables.bootstrap.js"></script>
+    <script type="text/javascript">
+        setTimeout(function () {
+            var element = document.getElementById('message');
+            element.parentNode.removeChild(element);
+        }, 3000);
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#datatable').dataTable();
+        });
+    </script>
 }

@@ -13,14 +13,13 @@ public class IndexModel : PageModel
     private readonly IRemoveFactorService _removeFactorService;
     private readonly IGetFactorService _getFactorService;
 
-
     public IndexModel(ILogger<IndexModel> logger, IGetFactorsService getFactorsService, IGetFactorService getFactorService, IRemoveFactorService removeFactorService)
     {
         _logger = logger;
         _getFactorsService = getFactorsService;
-		_getFactorService = getFactorService;
-		_removeFactorService = removeFactorService;
-	}
+        _getFactorService = getFactorService;
+        _removeFactorService = removeFactorService;
+    }
 
     public void OnGet() => Factors = _getFactorsService.GetFactors();
     public IActionResult OnGetRemove(int id)
