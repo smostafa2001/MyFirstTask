@@ -12,6 +12,7 @@
                         <th>#</th>
                         <th>توضیحات</th>
                         <th>تاریخ ایجاد</th>
+                        <th>عملیات</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -20,6 +21,13 @@
                     <td>@Model.Factor.Id</td>
                     <td>@Model.Factor.Description</td>
                     <td>@Model.Factor.CreationDate</td>
+                    <td>
+                        <a class="btn btn-warning pull-right m-rl-1" asp-page="/Edit" asp-route-id="@Model.Factor.Id" asp-route-url="Items">ویرایش</a>
+                        @if (!Model.Factor.IsRemoved)
+                        {
+                            <a asp-page="/Index" asp-page-handler="Remove" asp-route-id="@Model.Factor.Id" class="btn btn-danger pull-right m-rl-1">حذف</a>
+                        }
+                    </td>
                 </tr>
             </table>
         </p>
@@ -89,18 +97,3 @@ else
 <div class="row">
     <a class="btn btn-success" asp-page="/AddItem" asp-route-id="@Model.Factor.Id">افزودن آیتم جدید</a>
 </div>
-@section Scripts {
-    <script src="~/adminTheme/assets/datatables/jquery.dataTables.min.js"></script>
-    <script src="~/adminTheme/assets/datatables/dataTables.bootstrap.js"></script>
-    <script type="text/javascript">
-        setTimeout(function () {
-            var element = document.getElementById('message');
-            element.parentNode.removeChild(element);
-        }, 3000);
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#datatable').dataTable();
-        });
-    </script>
-}

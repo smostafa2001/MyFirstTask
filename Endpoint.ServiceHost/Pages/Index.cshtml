@@ -38,7 +38,7 @@
 										<td>@factor.CreationDate</td>
 										<td>@factor.Description</td>
 										<td>
-											<a class="btn btn-warning pull-right m-rl-1" asp-page="/Edit" asp-route-id="@factor.Id">ویرایش</a>
+											<a class="btn btn-warning pull-right m-rl-1" asp-page="/Edit" asp-route-id="@factor.Id" asp-route-url="Index">ویرایش</a>
 											@if (!factor.IsRemoved)
 											{
 												<a asp-page-handler="Remove" asp-route-id="@factor.Id" class="btn btn-danger pull-right m-rl-1">حذف</a>
@@ -55,19 +55,3 @@
 		</div>
 	</div>
 </div>
-
-@section Scripts {
-	<script src="~/adminTheme/assets/datatables/jquery.dataTables.min.js"></script>
-	<script src="~/adminTheme/assets/datatables/dataTables.bootstrap.js"></script>
-	<script type="text/javascript">
-		setTimeout(function() {
-			var element = document.getElementById('message');
-			element.parentNode.removeChild(element);
-		}, 3000);
-	</script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#datatable').dataTable();
-		});
-	</script>
-}

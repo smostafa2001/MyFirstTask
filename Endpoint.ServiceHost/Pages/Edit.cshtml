@@ -14,6 +14,7 @@
                 <label asp-for="Command.CreationDate" class="control-label">تاریخ</label>
                 <input class="form-control" asp-for="Command.CreationDate" />
                 <input type="hidden" asp-for="Command.Id" value="@Model.Command.Id" />
+                <input type="hidden" name="url" value="@Model.Page" />
             </div>
         </div>
     </div>

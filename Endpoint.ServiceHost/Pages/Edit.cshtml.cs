@@ -11,6 +11,7 @@ public class EditModel : PageModel
 
     private readonly IEditFactorService _editFactorService;
     private readonly IGetFactorDetailsService _getFactorDetailsService;
+    public string Page { get; private set; }
 
     public EditModel(IEditFactorService editFactorService, IGetFactorDetailsService getFactorDetailsService)
     {
@@ -18,13 +19,17 @@ public class EditModel : PageModel
         _getFactorDetailsService = getFactorDetailsService;
     }
 
-    public void OnGet(int id) => Command = _getFactorDetailsService.GetDetails(id);
+    public void OnGet(int id, string url)
+    {
+        Command = _getFactorDetailsService.GetDetails(id);
+        Page = url;
+    }
 
-    public IActionResult OnPost(EditFactor command)
+    public IActionResult OnPost(EditFactor command, string url)
     {
         if (string.IsNullOrWhiteSpace(command.Description)) command.Description = "ندارد";
         if (command.CreationDate == default) command.CreationDate = DateTime.Now;
         _editFactorService.Edit(command);
-        return RedirectToPage("/Index");
+        return url == "Index" ? RedirectToPage("/Index") : RedirectToPage("/Items", new { command.Id });
     }
 }
