@@ -2,7 +2,13 @@
 @model ItemsModel
 @{
 }
-
+<div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>مشخصات فاکتور</h3>
+        </div>
+    </div>
+</div>
 <div class="row">
     <div class="col-sm-12">
         <p class="pull-left">
@@ -40,7 +46,7 @@
         <div class="col-md-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">لیست آیتم ها</h3>
+                    <h4 class="panel-title">لیست آیتم ها</h4>
                 </div>
                 <div class="panel-body">
                     <div class="row">
@@ -92,8 +98,13 @@
 }
 else
 {
-    <div>ردیفی برای نمایشی وجود ندارد...</div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h4>ردیفی برای نمایشی وجود ندارد...</h4>
+        </div>
+    </div>
 }
+
 <div class="row">
     <a class="btn btn-success" asp-page="/AddItem" asp-route-id="@Model.Factor.Id">افزودن آیتم جدید</a>
 </div>
