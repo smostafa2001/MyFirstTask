@@ -18,7 +18,7 @@ public class CreateModel : PageModel
     {
         if (string.IsNullOrWhiteSpace(command.Description)) command.Description = "ندارد";
         if (command.CreationDate == default) command.CreationDate = DateTime.Now;
-        _addFactorService.Add(command);
-        return RedirectToPage("/Index");
+        int id = _addFactorService.Add(command);
+        return RedirectToPage("/Items", new {Id = id});
     }
 }

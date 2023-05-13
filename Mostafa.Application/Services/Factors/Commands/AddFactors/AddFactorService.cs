@@ -9,10 +9,11 @@ public class AddFactorService : IAddFactorService
 
     public AddFactorService(IDbContext context) => _context = context;
 
-    public void Add(AddFactor command)
+    public int Add(AddFactor command)
     {
         Factor factor = new(command.Description, command.CreationDate);
         _context.Factors.Add(factor);
         _context.SaveChanges();
+        return factor.Id;
     }
 }
