@@ -22,3 +22,15 @@ D:\Mostafa\MyFirstTask\Mostafa.Common\obj\Debug\net6.0\Mostafa.Common.dll
 D:\Mostafa\MyFirstTask\Mostafa.Common\obj\Debug\net6.0\refint\Mostafa.Common.dll
 D:\Mostafa\MyFirstTask\Mostafa.Common\obj\Debug\net6.0\Mostafa.Common.pdb
 D:\Mostafa\MyFirstTask\Mostafa.Common\obj\Debug\net6.0\ref\Mostafa.Common.dll
+C:\Users\tb\Source\Repos\MyFirstTask\Mostafa.Common\bin\Debug\net6.0\Mostafa.Common.deps.json
+C:\Users\tb\Source\Repos\MyFirstTask\Mostafa.Common\bin\Debug\net6.0\Mostafa.Common.dll
+C:\Users\tb\Source\Repos\MyFirstTask\Mostafa.Common\bin\Debug\net6.0\Mostafa.Common.pdb
+C:\Users\tb\Source\Repos\MyFirstTask\Mostafa.Common\obj\Debug\net6.0\Mostafa.Common.csproj.AssemblyReference.cache
+C:\Users\tb\Source\Repos\MyFirstTask\Mostafa.Common\obj\Debug\net6.0\Mostafa.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tb\Source\Repos\MyFirstTask\Mostafa.Common\obj\Debug\net6.0\Mostafa.Common.AssemblyInfoInputs.cache
+C:\Users\tb\Source\Repos\MyFirstTask\Mostafa.Common\obj\Debug\net6.0\Mostafa.Common.AssemblyInfo.cs
+C:\Users\tb\Source\Repos\MyFirstTask\Mostafa.Common\obj\Debug\net6.0\Mostafa.Common.csproj.CoreCompileInputs.cache
+C:\Users\tb\Source\Repos\MyFirstTask\Mostafa.Common\obj\Debug\net6.0\Mostafa.Common.dll
+C:\Users\tb\Source\Repos\MyFirstTask\Mostafa.Common\obj\Debug\net6.0\refint\Mostafa.Common.dll
+C:\Users\tb\Source\Repos\MyFirstTask\Mostafa.Common\obj\Debug\net6.0\Mostafa.Common.pdb
+C:\Users\tb\Source\Repos\MyFirstTask\Mostafa.Common\obj\Debug\net6.0\ref\Mostafa.Common.dll

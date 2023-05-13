@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hvD/tTLwmeMrVA4cwGxOETCoahyFEjUzvjn1Ab7fLNCQloyHnIdVSUCxaF+4y2z4oUOaOYpPuXpkIMvri9lQ3g==",
+  "dgSpecHash": "ofVyCZQMCBcOEYCSgZoYMOy/UD0J6CfyyZQrgY5CSX++FNnVcEyPgl5XjiRv/otE1UYjB+dxy3KkNDDlN5jqfg==",
   "success": true,
-  "projectFilePath": "D:\\Mostafa\\MyFirstTask\\Mostafa.Domain\\Mostafa.Domain.csproj",
+  "projectFilePath": "C:\\Users\\tb\\Source\\Repos\\MyFirstTask\\Mostafa.Domain\\Mostafa.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Mostafa\\MyFirstTask\\Mostafa.Application\\Mostafa.Application.csproj": {}
+    "C:\\Users\\tb\\Source\\Repos\\MyFirstTask\\Mostafa.Application\\Mostafa.Application.csproj": {}
   },
   "projects": {
-    "D:\\Mostafa\\MyFirstTask\\Mostafa.Application\\Mostafa.Application.csproj": {
+    "C:\\Users\\tb\\Source\\Repos\\MyFirstTask\\Mostafa.Application\\Mostafa.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Mostafa\\MyFirstTask\\Mostafa.Application\\Mostafa.Application.csproj",
+        "projectUniqueName": "C:\\Users\\tb\\Source\\Repos\\MyFirstTask\\Mostafa.Application\\Mostafa.Application.csproj",
         "projectName": "Mostafa.Application",
-        "projectPath": "D:\\Mostafa\\MyFirstTask\\Mostafa.Application\\Mostafa.Application.csproj",
-        "packagesPath": "C:\\Users\\Mostafa\\.nuget\\packages\\",
-        "outputPath": "D:\\Mostafa\\MyFirstTask\\Mostafa.Application\\obj\\",
+        "projectPath": "C:\\Users\\tb\\Source\\Repos\\MyFirstTask\\Mostafa.Application\\Mostafa.Application.csproj",
+        "packagesPath": "C:\\Users\\tb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tb\\Source\\Repos\\MyFirstTask\\Mostafa.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Mostafa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\tb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -33,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Mostafa\\MyFirstTask\\Mostafa.Common\\Mostafa.Common.csproj": {
-                "projectPath": "D:\\Mostafa\\MyFirstTask\\Mostafa.Common\\Mostafa.Common.csproj"
+              "C:\\Users\\tb\\Source\\Repos\\MyFirstTask\\Mostafa.Common\\Mostafa.Common.csproj": {
+                "projectPath": "C:\\Users\\tb\\Source\\Repos\\MyFirstTask\\Mostafa.Common\\Mostafa.Common.csproj"
               },
-              "D:\\Mostafa\\MyFirstTask\\Mostafa.Domain\\Mostafa.Domain.csproj": {
-                "projectPath": "D:\\Mostafa\\MyFirstTask\\Mostafa.Domain\\Mostafa.Domain.csproj"
+              "C:\\Users\\tb\\Source\\Repos\\MyFirstTask\\Mostafa.Domain\\Mostafa.Domain.csproj": {
+                "projectPath": "C:\\Users\\tb\\Source\\Repos\\MyFirstTask\\Mostafa.Domain\\Mostafa.Domain.csproj"
               }
             }
           }
@@ -63,8 +58,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -73,26 +67,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Mostafa\\MyFirstTask\\Mostafa.Common\\Mostafa.Common.csproj": {
+    "C:\\Users\\tb\\Source\\Repos\\MyFirstTask\\Mostafa.Common\\Mostafa.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Mostafa\\MyFirstTask\\Mostafa.Common\\Mostafa.Common.csproj",
+        "projectUniqueName": "C:\\Users\\tb\\Source\\Repos\\MyFirstTask\\Mostafa.Common\\Mostafa.Common.csproj",
         "projectName": "Mostafa.Common",
-        "projectPath": "D:\\Mostafa\\MyFirstTask\\Mostafa.Common\\Mostafa.Common.csproj",
-        "packagesPath": "C:\\Users\\Mostafa\\.nuget\\packages\\",
-        "outputPath": "D:\\Mostafa\\MyFirstTask\\Mostafa.Common\\obj\\",
+        "projectPath": "C:\\Users\\tb\\Source\\Repos\\MyFirstTask\\Mostafa.Common\\Mostafa.Common.csproj",
+        "packagesPath": "C:\\Users\\tb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tb\\Source\\Repos\\MyFirstTask\\Mostafa.Common\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Mostafa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\tb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -123,8 +112,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -133,26 +121,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Mostafa\\MyFirstTask\\Mostafa.Domain\\Mostafa.Domain.csproj": {
+    "C:\\Users\\tb\\Source\\Repos\\MyFirstTask\\Mostafa.Domain\\Mostafa.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Mostafa\\MyFirstTask\\Mostafa.Domain\\Mostafa.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\tb\\Source\\Repos\\MyFirstTask\\Mostafa.Domain\\Mostafa.Domain.csproj",
         "projectName": "Mostafa.Domain",
-        "projectPath": "D:\\Mostafa\\MyFirstTask\\Mostafa.Domain\\Mostafa.Domain.csproj",
-        "packagesPath": "C:\\Users\\Mostafa\\.nuget\\packages\\",
-        "outputPath": "D:\\Mostafa\\MyFirstTask\\Mostafa.Domain\\obj\\",
+        "projectPath": "C:\\Users\\tb\\Source\\Repos\\MyFirstTask\\Mostafa.Domain\\Mostafa.Domain.csproj",
+        "packagesPath": "C:\\Users\\tb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tb\\Source\\Repos\\MyFirstTask\\Mostafa.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Mostafa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\tb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -183,8 +166,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -193,7 +175,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
